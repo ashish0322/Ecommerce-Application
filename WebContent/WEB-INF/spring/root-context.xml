@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<bean id="userValidator" class="com.ashish.org.validator.UserValidator"/>
+	
+	
+	<bean id="sellerValidator" class="com.ashish.org.validator.SellerRegistrationValidator"/>
+	<bean id="sellerLoginValidator"  class="com.ashish.org.validator.SellerLoginValidator"/>
+	
+	
+	<bean id="categoryValidator" class="com.ashish.org.validator.CategoryValidator"/>
+	<bean id="productValidator"  class="com.ashish.org.validator.ProductValidator"/>
+	
+	
+	
+	<bean id="loginDao" class="com.ashish.org.dao.LoginDAO"/>
+	<bean id="userDao" class="com.ashish.org.dao.UserDAO"/>
+	<bean id="cartDao" class="com.ashish.org.dao.CartDAO"/>
+	<bean id="ordersDao" class="com.ashish.org.dao.OrdersDAO"/>
+	
+	<bean id="product" class="com.ashish.org.pojo.Product"/>
+	
+	<bean id="mainAdminDao" class="com.ashish.org.dao.MainAdminDao"/>
+	<bean id="categoryDao" class="com.ashish.org.dao.CategoryDAO"/>
+	<bean id="productDao" class="com.ashish.org.dao.ProductDAO"/>
+	
+	
+</beans>
